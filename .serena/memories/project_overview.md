@@ -1,0 +1,40 @@
+# 项目概览
+
+- 项目名：Pocket Vault（中文建议名：拾光盒）
+- 当前状态：仓库目前仅包含产品文档与提示词，尚未初始化 Android/Gradle 工程，也没有 Kotlin 源码。
+- 当前可见目录结构：
+  - `docs/提示词.md`
+  - `docs/离线收藏盒_app_项目文档.md`
+  - `.serena/` 为 Serena 配置目录
+- 项目目标：开发一个 Android 本地离线收藏 App，支持收藏链接、文字、图片、账号密码四类内容。
+- 核心产品特性：离线优先、打开即用、不依赖登录注册、高颜值卡片化 UI、轻量流畅、敏感数据本地加密。
+- 目标技术栈（来自产品文档，而非现有代码）：
+  - Kotlin
+  - Jetpack Compose
+  - MVVM + Clean Architecture
+  - Navigation Compose
+  - Room
+  - Hilt
+  - Coroutines + Flow
+  - Android Keystore / Jetpack Security / Tink（用于敏感字段加密）
+  - Coil
+  - Kotlinx Serialization
+- 主要功能范围（MVP）：
+  - 四类内容的创建、编辑、删除、详情展示
+  - 首页卡片流
+  - 分类、标签、收藏夹
+  - 搜索
+  - 置顶/收藏
+  - 本地持久化
+  - 密码本地加密
+  - App 锁（PIN/生物识别可选）
+  - 深色/浅色主题
+- 推荐架构分层（来自文档）：
+  - `app/ui`
+  - `app/domain`
+  - `app/data`
+  - `app/core`
+- 当前仓库的事实判断：
+  - 还没有 `build.gradle` / `settings.gradle` / `gradlew` 等构建文件
+  - 还没有 `*.kt` / `*.kts` 源码文件
+  - 因此当前阶段更适合先做项目初始化与脚手架搭建，再进入功能开发
